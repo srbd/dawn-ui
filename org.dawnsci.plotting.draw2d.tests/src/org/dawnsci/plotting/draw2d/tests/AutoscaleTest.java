@@ -40,12 +40,10 @@ public class AutoscaleTest extends PluginTestBase{
 	
 		// normal data
 		input = AbstractDataset.arange(100, Dataset.FLOAT64);
-		input.setShape(10, 10);
 		params.add(new Object[] {input});
 		
 		// normal data with some negative values
 		input = AbstractDataset.arange(-100, 100, 2, Dataset.FLOAT64);
-		input.setShape(10, 10);
 		params.add(new Object[] {input});
 
 		return params;
